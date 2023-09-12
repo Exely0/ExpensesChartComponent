@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./tailwindstyle.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="min-h-screen bg-gray-400 flex justify-center items-center">
+
+    <main class="w-72 md:w-80">
+
+        <!--My balance-->
+
+        <div class="mb-4 bg-red-500 p-4 flex justify-between items-center rounded-xl">
+            <div class="flex flex-col text-gray-100">
+                <p class="text-xs">
+                    My balance
+                </p>
+                <p class="text-xl font-bold">
+                    Total
+                </p>
+            </div>
+            <div>
+                <img class="h-8" src="expenses-chart-component-main/images/logo.svg">
+            </div>
+        </div>
+
+        <!--Spending-->
+
+        <div class="bg-gray-100 p-4 rounded-xl space-y-4">
+
+            <p>
+                $921.48
+            </p>
+
+            <!--datas-->
+
+            <canvas id="graph" class="h-40">
+
+            </canvas>
+
+            <div class="border border-gray-600"></div>
+
+            <div class="flex justify-between">
+
+                <div class="flex flex-col">
+                    <p class="text-xs text-gray-600">
+                        Total this month
+                    </p>
+                    <p class="text-xl font-bold">
+                        $478.33
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <p class="text-xs self-end font-bold">
+                        +2.4%
+                    </p>
+                    <p class="text-xs text-gray-600">
+                        from last month
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
